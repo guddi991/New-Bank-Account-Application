@@ -8,7 +8,7 @@ public class bankAccountApp {
 		List<Account> accounts = new LinkedList<Account>();
 		
 	// read a CSV file and the create a new account based on data
-		String file = "C:\\Users\\Dell\\Downloads\\NewBankAccounts.csv";
+		String file = "NewBankAccounts.csv";
 		List<String[]> newAccountHolders = utilities.CSV.read(file);
 		for(String[] accountHolder : newAccountHolders) {
 			String name = accountHolder[0];
